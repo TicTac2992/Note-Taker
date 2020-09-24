@@ -8,10 +8,10 @@ var fs = require("fs");
 //=============================================================================
 
 module.exports = function(app) {
-  //API GET request
-  app.get("/api/notes", function(req, res) {
-    res.json(db);
-  })
+    //API GET request
+    app.get("/api/notes", function(req, res) {
+      res.json(db);
+    })
 
 //Post request
 app.post("/api/notes", function(req,res) {
