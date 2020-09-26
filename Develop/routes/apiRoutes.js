@@ -49,4 +49,3 @@ app.post("/api/notes", function(req,res) {
       res.json(db);
   });
 });
-};
