@@ -31,3 +31,22 @@ app.post("/api/notes", function(req,res) {
     });
   });
 };
+
+//API delete request
+ app.delete("/api/notes/:id", function(req, res) {
+  var id = req.params.id;
+
+  //splice deletes the selected note from the db array
+  db.splice(id - 1, 1);
+
+  //reassign id for each note object
+  db.forEach((obj, i) => {
+      obj.id = i + 1;
+  });
+
+  //return remaining notes to client
+  fs.writeFile("./db/db.json", JSON.stringify(db), function (){
+      res.json(db);
+  });
+});
+};
