@@ -3,7 +3,7 @@ var app = express();
 
 
 // Sets the port
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 // Sets the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
