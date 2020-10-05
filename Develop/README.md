@@ -1,4 +1,4 @@
-# unit-11-note-taker
+# Note-Taker
 ## Table of Contents
 * [Description](#Description)
 * [Heroku](#Heroku)
